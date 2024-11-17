@@ -16,6 +16,6 @@ export async function getStaticProps() {
     console.log(data)
     return{
         props : {data},
-        revalidate : process.env.REVALIDATE
+        revalidate : +process.env.REVALIDATE
     }
 }
